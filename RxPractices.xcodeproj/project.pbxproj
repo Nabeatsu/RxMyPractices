@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55960914229B29CB00AC349F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55960913229B29CB00AC349F /* AppDelegate.swift */; };
-		55960916229B29CB00AC349F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55960915229B29CB00AC349F /* ViewController.swift */; };
+		55960916229B29CB00AC349F /* HogeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55960915229B29CB00AC349F /* HogeViewController.swift */; };
 		55960919229B29CB00AC349F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55960917229B29CB00AC349F /* Main.storyboard */; };
 		5596091B229B29CC00AC349F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5596091A229B29CC00AC349F /* Assets.xcassets */; };
 		5596091E229B29CC00AC349F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5596091C229B29CC00AC349F /* LaunchScreen.storyboard */; };
@@ -34,7 +34,7 @@
 		3C396D034826E7346C018A9F /* Pods-RxPractices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPractices.debug.xcconfig"; path = "Target Support Files/Pods-RxPractices/Pods-RxPractices.debug.xcconfig"; sourceTree = "<group>"; };
 		55960910229B29CB00AC349F /* RxPractices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxPractices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55960913229B29CB00AC349F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55960915229B29CB00AC349F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		55960915229B29CB00AC349F /* HogeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogeViewController.swift; sourceTree = "<group>"; };
 		55960918229B29CB00AC349F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5596091A229B29CC00AC349F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5596091D229B29CC00AC349F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,9 +98,8 @@
 		55960912229B29CB00AC349F /* RxPractices */ = {
 			isa = PBXGroup;
 			children = (
-				55960913229B29CB00AC349F /* AppDelegate.swift */,
-				55960915229B29CB00AC349F /* ViewController.swift */,
-				55960917229B29CB00AC349F /* Main.storyboard */,
+				55A022FC229B2DD2009606D4 /* ViewModels */,
+				55A022FB229B2DC8009606D4 /* Views */,
 				5596091A229B29CC00AC349F /* Assets.xcassets */,
 				5596091C229B29CC00AC349F /* LaunchScreen.storyboard */,
 				5596091F229B29CC00AC349F /* Info.plist */,
@@ -117,6 +116,39 @@
 			path = RxPracticesTests;
 			sourceTree = "<group>";
 		};
+		55A022FB229B2DC8009606D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55A022FE229B2E01009606D4 /* Storyboards */,
+				55A022FD229B2DEE009606D4 /* Controllers */,
+				55960913229B29CB00AC349F /* AppDelegate.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55A022FC229B2DD2009606D4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		55A022FD229B2DEE009606D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				55960915229B29CB00AC349F /* HogeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		55A022FE229B2E01009606D4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				55960917229B29CB00AC349F /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		F82ABE3710A301A67E8E660B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +157,6 @@
 				724FA534A8A1D2A8DB2BF1F3 /* Pods-RxPracticesTests.debug.xcconfig */,
 				56EE5AEB2CD2BF15D5E11F5D /* Pods-RxPracticesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -304,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55960916229B29CB00AC349F /* ViewController.swift in Sources */,
+				55960916229B29CB00AC349F /* HogeViewController.swift in Sources */,
 				55960914229B29CB00AC349F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
